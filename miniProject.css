@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f0f14;
+   
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#container {
+    background: #181820;
+    padding: 35px;
+
+    width: 550px;
+    max-height: 650px;
+    border: 1px solid #2d2d38;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.15);
+    margin-bottom: 25px;
+}
+
+.input-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.heading {
+    color: white;
+    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+#task {
+    flex: 1;
+    padding: 10px 15px;
+    background-color: #22222C;
+    color: white;
+    border: 1px solid #343440;
+    border-radius: 9px;
+    outline: none;
+    font-size: 15px;
+}
+
+#task::placeholder {
+    color: #777783;
+}
+
+#task:focus {
+    border-color: #8B5CF6;
+}
+
+#btn {
+    padding: 13px 18px;
+    background: #8B5CF6;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn:hover {
+    background: #A78BFA;
+    transform: translateY(-2px);
+}
+
+#task-list {
+    list-style: none;
+    max-height: 350px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+#task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    background: #22222C;
+    border: 1px solid #30303B;
+    border-radius: 10px;
+    padding: 13px 15px;
+    margin-bottom: 10px;
+    /* transition: 0.3s; */
+}
+
+#task-list li:hover {
+    border-color: #8B5CF6;
+}
+
+#task-list p {
+    flex: 1;
+    margin: 0;
+    word-break: break-word;
+}
+
+#task-list .completed {
+    text-decoration: line-through;
+    color: #777783;
+}
+#task-list li div {
+    display: flex;
+    gap: 7px;
+}
+
+#task-list button {
+    border: none;
+    border-radius: 6px;
+    padding: 7px 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+#task-list button:first-child {
+    background: #8B5CF6;
+}
+
+#task-list button:last-child {
+    background: #DC3545;
+}
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}
